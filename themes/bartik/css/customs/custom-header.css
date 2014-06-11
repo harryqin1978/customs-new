@@ -1,0 +1,42 @@
+#header {
+  background: none;
+  background-color: #fff;
+}
+
+#header .region-header, .region-header a, #header .region-header li a.active, #header #name-and-slogan, #header #name-and-slogan a, #header #secondary-menu-links li a {
+  color: #000;
+}
+
+#header #secondary-menu .links .first {
+  border-right: 1px solid #000;
+}
+
+#header .region-header .block-menu {
+  width: 740px;
+}
+
+#header #block-system-main-menu .content {
+  float: right;
+}
+
+#header #block-system-main-menu .menu li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+#header .region-header .block-menu li a {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+#header .region-header .block-menu li a:hover, 
+#header .region-header .block-menu li a.active {
+  color: #000;
+}
+
+#header #block-system-main-menu {
+  padding-bottom: 52px;
+  border-bottom: 1px solid #ccc;
+}
+
