@@ -1,0 +1,15 @@
+/* BxSlider */
+
+.bx-wrapper .bx-viewport {
+  border: none;
+}
+
+.bx-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.bx-wrapper .bx-controls {
+  padding-top: 20px;
+  margin-bottom: -25px;
+}

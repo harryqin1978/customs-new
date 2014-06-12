@@ -24,8 +24,10 @@ function bartik_preprocess_html(&$variables) {
   drupal_add_css(path_to_theme() . '/css/customs/custom-layout.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-page.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-header.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/customs/custom-featured.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-main-wrapper.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-footer-wrapper.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/customs/custom-views.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
 
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
