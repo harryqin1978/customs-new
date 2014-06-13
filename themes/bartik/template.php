@@ -21,6 +21,7 @@ function bartik_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'footer-columns';
   }
 
+  drupal_add_css(path_to_theme() . '/css/customs/custom-reset.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-layout.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-page.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-header.css', array('group' => CSS_THEME, 'preprocess' => FALSE));

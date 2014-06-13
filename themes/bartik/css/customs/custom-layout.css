@@ -1,0 +1,10 @@
+body.page-contact.one-sidebar #content {
+  width: 520px;
+  padding-left: 50px;
+}
+
+body.page-contact.one-sidebar #sidebar-second {
+  width: 340px;
+  text-align: center;
+  padding-right: 50px;
+}

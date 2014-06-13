@@ -1,0 +1,65 @@
+/* Font */
+
+#header, #footer-wrapper, #skip-link, ul.contextual-links, ul.links, ul.primary, .item-list .pager, div.field-type-taxonomy-term-reference, div.messages, div.meta, p.comment-time, table, .breadcrumb {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body, #site-slogan, .ui-widget, .comment-form label {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Block */
+
+.sidebar .block {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Form */
+
+.form-item h1#page-title {
+ 
+ 
+}
+
+.form-item label {
+  color: #909090;
+}
+
+.form-item input.form-text {
+  border: none;
+   padding: 5px;
+  background-color: #f3f3f3;
+}
+
+.form-actions {
+}
+
+.form-actions input.form-submit {
+  display: none;
+}
+
+.not-logged-in h1#page-title {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.form-item  textarea.form-textarea {
+  padding: 10px 0px;
+  border: none;
+  height: 120px;
+  color: #909090;
+  background-color: #f3f3f3;
+}
+
+.form-item  .resizable-textarea .grippie {
+  background: none;
+  cursor: s-resize;
+  border: none;
+  height: 0px; 
+ }
+ 
+.not-logged-in #sidebar-second a {
+  color: #909090;
+}
