@@ -19,8 +19,6 @@ body, #site-slogan, .ui-widget, .comment-form label {
 /* Form */
 
 .form-item h1#page-title {
- 
- 
 }
 
 .form-item label {
@@ -57,7 +55,7 @@ body, #site-slogan, .ui-widget, .comment-form label {
   background: none;
   cursor: s-resize;
   border: none;
-  height: 0px; 
+  height: 0px;
  }
  
 .not-logged-in #sidebar-second a {
