@@ -79,8 +79,6 @@
  */
 ?>
 
-AIRI
-
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
@@ -105,6 +103,9 @@ AIRI
       hide($content['links']);
       print render($content);
     ?>
+
+    <?php print l(t('More info'),'contact'); ?>
+
   </div>
 
   <?php

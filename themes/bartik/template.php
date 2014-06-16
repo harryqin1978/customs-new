@@ -39,11 +39,14 @@ function bartik_preprocess_html(&$variables) {
 
   if (arg(0) == 'node' && is_numeric(arg(1)) && !arg(2)) {
     drupal_add_js(path_to_theme() . '/js/customs/custom-node.js', array('group' => JS_THEME, 'preprocess' => FALSE));
+    drupal_add_js(path_to_theme() . '/js/customs/custom-plugin-videoBG.js', array('group' => JS_THEME, 'preprocess' => FALSE));
   }
 
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
+
+
 }
 
 /**

@@ -201,10 +201,12 @@ body.page-node.node-type-model h1#page-title {
 body.page-node.node-type-model #block-system-main .content .node .content .more a {
   color: #900;
   font-style: italic;
+  
 }
 
 /* Bike list */
 
-.view-bike-list {
-  border: 1px solid red;
+.view-bike-list .views-field a img {
+  margin-bottom: 14px;
+   
 }
