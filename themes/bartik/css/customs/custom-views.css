@@ -201,12 +201,29 @@ body.page-node.node-type-model h1#page-title {
 body.page-node.node-type-model #block-system-main .content .node .content .more a {
   color: #900;
   font-style: italic;
-  
 }
 
 /* Bike list */
 
 .view-bike-list .views-field a img {
   margin-bottom: 14px;
-   
+}
+
+/* Shop home */
+
+.view-shop-home .view-content .views-row {
+  width: 300px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+}
+
+.view-shop-home .view-content .views-row:nth-child(3n) {
+  margin-right: 0;
+}
+
+.view-shop-home .view-content .views-row .views-field-title {
+  margin: 10px 0;
 }

@@ -97,9 +97,9 @@
 
 <script>
 jQuery('#video-wrapper').videoBG({
-    mp4: '<?php print base_path() . path_to_theme() . '/videos/new_video_home.mp4' ?>',
-    ogv: '<?php print base_path() . path_to_theme() . '/videos/new_video_home.ogv' ?>',
-    webm: '<?php print base_path() . path_to_theme() . '/videos/new_video_home.webm' ?>',
+    mp4: '<?php print base_path() . path_to_theme() . '/videos/christmas_snow.mp4' ?>',
+    ogv: '<?php print base_path() . path_to_theme() . '/videos/christmas_snow.ogv' ?>',
+    webm: '<?php print base_path() . path_to_theme() . '/videos/christmas_snow.webm' ?>',
     scale:true,
     zIndex:0
   }); 
