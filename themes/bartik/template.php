@@ -42,6 +42,10 @@ function bartik_preprocess_html(&$variables) {
     drupal_add_js(path_to_theme() . '/js/customs/custom-plugin-videoBG.js', array('group' => JS_THEME, 'preprocess' => FALSE));
   }
 
+  if (arg(0) == 'shop-home') {
+    drupal_add_js(path_to_theme() . '/js/customs/custom-shop-home.js', array('group' => JS_THEME, 'preprocess' => FALSE));
+  }
+
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
@@ -134,6 +138,49 @@ function bartik_process_maintenance_page(&$variables) {
 function bartik_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
+  }
+
+
+  /* CREATES FILE LINK VARIABLES FOR VIDEO PAGES */
+  // define $node object, so it's  easier to use it
+  $node = $variables['node'];
+
+
+  // add variables to node--nameofnodetype.tpl.php file
+  if ($node->type == 'video'){
+
+    // mp4 file
+    $attachment = field_get_items('node', $node, 'field_node_video_mp4', $node->language);
+    $mp4_filename = $attachment[0]['filename'];
+    $mp4_link = file_create_url($attachment[0]['uri']);
+
+    // $variables: an array with variables
+    // you need to add one, so just define it
+    $variables['mp4_filename'] = $mp4_filename;    
+    $variables['mp4_link'] = $mp4_link;
+
+    
+    // ogv file
+    $attachment = field_get_items('node', $node, 'field_node_video_ogv', $node->language);
+    $ogv_filename = $attachment[0]['filename'];
+    $ogv_link = file_create_url($attachment[0]['uri']);
+
+    // $variables: an array with variables
+    // you need to add one, so just define it
+    $variables['ogv_filename'] = $ogv_filename;    
+    $variables['ogv_link'] = $ogv_link;    
+
+
+    // webm file
+    $attachment = field_get_items('node', $node, 'field_node_video_webm', $node->language);
+    $webm_filename = $attachment[0]['filename'];
+    $webm_link = file_create_url($attachment[0]['uri']);
+
+    // $variables: an array with variables
+    // you need to add one, so just define it
+    $variables['webm_filename'] = $webm_filename;    
+    $variables['webm_link'] = $webm_link;
+
   }
 }
 
