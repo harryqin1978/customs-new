@@ -263,6 +263,15 @@ body.page-node.node-type-model #block-system-main .content .node .content .more 
   margin: 10px 0;
 }
 
+/* Advertisement list */
+
+.view-advertisement-list .view-content {
+  margin-bottom: -20px;
+}
+
+.view-advertisement-list .view-content .views-row {
+  margin-bottom: 15px;
+}
 
 /* Basic page template */
 

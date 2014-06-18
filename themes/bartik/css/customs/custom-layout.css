@@ -8,3 +8,27 @@ body.page-contact.one-sidebar #sidebar-second {
   text-align: center;
   padding-right: 50px;
 }
+
+body.page-models.one-sidebar #content {
+  width: 660px;
+}
+
+body.page-models.one-sidebar #sidebar-second {
+  width: 269px;
+  border-left: 1px solid #ccc;
+  margin-left: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+body.page-models.one-sidebar #sidebar-second .section {
+  padding-top: 0;
+}
+
+body.page-models.one-sidebar #sidebar-second .block:first-child .content {
+  margin-top: 0;
+}
+
+body.page-models.one-sidebar #sidebar-second img {
+  width: 100%;
+}
