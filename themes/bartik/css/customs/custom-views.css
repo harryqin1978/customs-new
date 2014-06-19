@@ -18,11 +18,11 @@
 
 .view-homepage-bloglist .view-content .views-row {
   width: 455px;
-  float: left;
+  /*float: left;*/
 }
 
 .view-homepage-bloglist .view-content .views-row:nth-child(odd) {
-  margin-right: 20px;
+  /*margin-right: 20px;*/
 }
 
 .view-homepage-bloglist .view-content .views-row .node {
@@ -261,6 +261,15 @@ body.page-node.node-type-model #block-system-main .content .node .content .more 
 
 .view-shop-home .view-content .views-row .views-field-title {
   margin: 10px 0;
+}
+
+/* Shop item datail page */
+
+body.page-node.node-type-shop-item h1#page-title {
+  color: #900;
+}
+
+body.page-node.node-type-shop-item #block-system-main .node {
 }
 
 /* Advertisement list */

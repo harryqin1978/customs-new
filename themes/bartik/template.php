@@ -30,6 +30,7 @@ function bartik_preprocess_html(&$variables) {
   drupal_add_css(path_to_theme() . '/css/customs/custom-main-wrapper.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-footer-wrapper.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-views.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/customs/custom-node-shop-item.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
 
   // Load optional css and javascript files
 
@@ -40,10 +41,6 @@ function bartik_preprocess_html(&$variables) {
   if (arg(0) == 'node' && is_numeric(arg(1)) && !arg(2)) {
     drupal_add_js(path_to_theme() . '/js/customs/custom-node.js', array('group' => JS_THEME, 'preprocess' => FALSE));
     drupal_add_js(path_to_theme() . '/js/customs/custom-plugin-videoBG.js', array('group' => JS_THEME, 'preprocess' => FALSE));
-  }
-
-  if (arg(0) == 'shop-home') {
-    drupal_add_js(path_to_theme() . '/js/customs/custom-shop-home.js', array('group' => JS_THEME, 'preprocess' => FALSE));
   }
 
   // Add conditional stylesheets for IE
