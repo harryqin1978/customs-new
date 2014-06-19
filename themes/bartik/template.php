@@ -43,6 +43,10 @@ function bartik_preprocess_html(&$variables) {
     drupal_add_js(path_to_theme() . '/js/customs/custom-plugin-videoBG.js', array('group' => JS_THEME, 'preprocess' => FALSE));
   }
 
+  if (arg(0) == 'shop-home') {
+    drupal_add_js(path_to_theme() . '/js/customs/custom-shop-home.js', array('group' => JS_THEME, 'preprocess' => FALSE));
+  }
+
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
