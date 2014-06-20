@@ -41,6 +41,7 @@ function bartik_preprocess_html(&$variables) {
   if (arg(0) == 'node' && is_numeric(arg(1)) && !arg(2)) {
     drupal_add_js(path_to_theme() . '/js/customs/custom-node.js', array('group' => JS_THEME, 'preprocess' => FALSE));
     drupal_add_js(path_to_theme() . '/js/customs/custom-plugin-videoBG.js', array('group' => JS_THEME, 'preprocess' => FALSE));
+    drupal_add_js(path_to_theme() . '/js/customs/custom-node-shop-item.js', array('group' => JS_THEME, 'preprocess' => FALSE));
   }
 
   if (arg(0) == 'shop-home') {

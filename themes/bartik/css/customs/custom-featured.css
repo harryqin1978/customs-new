@@ -1,9 +1,124 @@
 #featured {
   padding: 0;
   border-bottom: 1px solid #A8A8A8;
-  background-color: #fff;
 }
 
 #featured div.section {
   width: 100%;
+}
+
+/*--blog--*/
+#content h1#page-title{
+	font-family: 'bebas-webfont';
+}
+
+#content .date-in-parts{
+	color:#565656;
+	margin-bottom:2s5px;
+}
+
+
+/*--overwrite-shop-page--*/
+#main .view-shop-home .view-content .views-row .field-content a {
+  font-family: 'bebas-webfont';
+  color:#c12b1c;
+}
+
+#main .view-shop-home .view-content .views-row .field-content a:hover {
+	color:#000;
+	text-decoration:none;
+}
+#page .view-shop-home-slideshow .bx-viewport .catergory-line ul{
+	padding-top: 3px;
+}	
+#page .view-shop-home-slideshow .bx-viewport .catergory-line ul li{
+	font-family:'bebas-webfont';
+}
+#page .view-shop-home-slideshow .bx-viewport .catergory-line ul li a{
+	font-size:14px;
+	line-height:normal;
+	padding: 0 20px;
+}
+#page .view-shop-home-slideshow .bx-viewport .catergory-line ul li a:hover{
+	color:#000;
+	text-decoration:none;
+}
+
+/*--bike-page--*/
+#content .node-bike .content a{
+	background-color:#000;
+	padding: 5px 15px;
+	color:#fff;
+}
+#content .node-bike .content a:hover{
+	text-decoration:none;
+	background:#c12b1c;
+}
+
+/*--contact--*/
+.form-actions input.form-submit {
+display: block;
+background-image:none;
+background-color:#000;
+color:#fff;
+border-radius: 0;
+padding:8px 17px;
+}
+.form-actions input.form-submit:hover{
+	background-color:#c12b1c;
+}
+
+.content form.contact-form label{
+	font-weight:300;
+
+}
+.content form.contact-form #edit-name,.content form.contact-form #edit-mail,.content form.contact-form #edit-subject,.content form.contact-form #edit-message{
+	padding: 7px 5px;
+	border-radius: 0;
+	color:#000;
+}
+
+.content form.contact-form textarea:focus, .content form.contact-form input:focus{
+    outline: 0;
+    background-color:#d6d6d6;
+}
+/*--left-content--*/
+#block-block-1 .content {
+	text-align:left;
+	font-size: 0.85em;
+	margin-top: 80px;
+}
+#block-block-1 .content p{
+	margin-bottom:30px;
+}
+/*--product-details--*/
+#main #content .section .node-shop-item .field-items h3{
+	font-family:'bebas-webfont';
+	font-size:1.1em;
+	color:#3d3d3d;
+	margin-top:20px;
+}
+#main #content .section .node-shop-item .field-items p{
+	font-size:0.9em;
+}
+#main #content .section .node-shop-item .field-items ul {
+	padding-left:22px;
+}
+#main #content .section .node-shop-item .field-items ul li{
+	list-style-image:url(../../images/arrow.png);
+	margin-bottom:8px;
+}
+body #main #content .section .node-shop-item .content a{
+	font-weight:normal;
+	font-size:14px;
+	margin-right: 510px;
+	margin-top:15px;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	padding:8px 20px;
+}
+body #main #content .section .node-shop-item .content a:hover{
+	background-color:#c12b1c;
+	text-decoration:none;
 }

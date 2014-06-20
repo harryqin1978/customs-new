@@ -104,8 +104,43 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_node_blog_facebook_link']);
+      hide($content['field_node_blog_twitter_link']);
+      hide($content['field_node_blog_googleplus_link']);
+      
       print render($content);
     ?>
+
+  <!--_______SOCIAL MEDIA BAR_______ -->
+   <div class="post-social-media-bar">
+    <div class="bshare-custom icon-medium">
+     <div class="bsPromo bsPromo2"></div>
+     
+     <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a>
+     <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+     <a title="分享到微信" class="bshare-pinterest" href="javascript:void(0);"></a>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+    <?php
+
+    $options = array('absolute' => TRUE);
+    $node_full_url = url('node/' . $node->nid, $options);
+
+    ?>
+    <script type="text/javascript" charset="utf-8">
+      bShare.addEntry({
+          title: "<?php print $title; ?>",
+          url: "<?php print $node_full_url; ?>"
+      });
+    </script>
+   </div>
+
+  </div>
+
+  <div class="read-more">
+    <?php print l(t('Read more'),'node/'.$node->nid); ?>
   </div>
 
   <?php

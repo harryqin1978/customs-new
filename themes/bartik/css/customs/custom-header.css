@@ -1,6 +1,4 @@
 #header {
-  background: none;
-  background-color: #fff;
 }
 
 #header .region-header, .region-header a, #header .region-header li a.active, #header #name-and-slogan, #header #name-and-slogan a, #header #secondary-menu-links li a {
@@ -39,4 +37,20 @@
   padding-bottom: 52px;
   border-bottom: 1px solid #ccc;
 }
-
+/*-- overwrite--*/
+#header #block-system-main-menu .menu li {
+  font-size: 13px;
+}
+#header .region-header .block-menu li a {
+  padding: 3px 18px;
+}
+#header .region-header .block-menu li a:hover{
+  color:#c12b1c;
+}
+body #header #logo{
+  padding-bottom:0;
+}
+#header #block-system-main-menu {
+ padding: 24px 0 30px 0;
+ border-bottom: 1px solid #ccc;
+}

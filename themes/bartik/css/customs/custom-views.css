@@ -40,6 +40,9 @@
 .view-homepage-bloglist .view-content .views-row .node .content .field-name-field-node-blog-cover-image img {
   width: 100%;
 }
+.view-homepage-bloglist .bshare-custom,.view-homepage-bloglist .read-more{
+  float: right;
+}
 
 .view-homepage-bloglist .field-name-field-node-blog-facebook-link .field-items a,
 .view-homepage-bloglist .field-name-field-node-blog-twitter-link .field-items a,

@@ -104,7 +104,7 @@
       print render($content);
     ?>
 
-    <?php print l(t('More info'),'contact'); ?>
+    <?php print l(t('More info'),'contact',array('fragment' => 'main-content')); ?>
 
   </div>
 

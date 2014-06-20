@@ -1,3 +1,10 @@
-#page-wrapper {
-  background-color: #fff;
+body{
+  background:-moz-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc);/*Mozilla*/
+  background:-webkit-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc);/*new gradient for Webkit*/
+  background:-o-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc); /*Opera11*/
+  background:-ms-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc); /*IE*/
+}
+
+#page-wrapper, #page, #main-wrapper, #main-menu-links li a.active, #main-menu-links li.active-trail a, #header, #footer-wrapper {
+  background: transparent;
 }
