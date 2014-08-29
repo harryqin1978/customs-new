@@ -96,13 +96,17 @@
     </div>
   <?php endif; ?>
 
-  <div class="content clearfix"<?php print $content_attributes; ?>>
+  <div class="content"<?php print $content_attributes; ?>>
+    <div class="left">
     <?php
       // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
+      print render($content['field_node_shop_item_cover_image']);
+      
     ?>
+    </div>
+    <div class="right">
+      <?php print render($content['body']); ?>
+    </div>
 
     <?php print l(t('More info'),'contact',array('fragment' => 'main-content')); ?>
 

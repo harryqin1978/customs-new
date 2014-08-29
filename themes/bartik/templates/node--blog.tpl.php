@@ -111,6 +111,10 @@
       print render($content);
     ?>
 
+  <div class="read-more">
+    <?php print l(t('Read more'),'node/'.$node->nid); ?>
+  </div>
+
   <!--_______SOCIAL MEDIA BAR_______ -->
    <div class="post-social-media-bar">
     <div class="bshare-custom icon-medium">
@@ -139,9 +143,7 @@
 
   </div>
 
-  <div class="read-more">
-    <?php print l(t('Read more'),'node/'.$node->nid); ?>
-  </div>
+  
 
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment

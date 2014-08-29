@@ -13,6 +13,14 @@
   padding-top: 20px;
   margin-bottom: -25px;
 }
+ 
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+background: #7d6f6c;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+ background-color: #b6382a;
+}
+
 
 /* Homepage bloglist */
 
@@ -40,8 +48,21 @@
 .view-homepage-bloglist .view-content .views-row .node .content .field-name-field-node-blog-cover-image img {
   width: 100%;
 }
-.view-homepage-bloglist .bshare-custom,.view-homepage-bloglist .read-more{
+.view-homepage-bloglist .bshare-custom,.view-homepage-bloglist .read-more {
   float: right;
+  clear: both;
+   margin-bottom: 10px;
+  font-style:italic;
+}
+.view-homepage-bloglist .read-more a{
+  padding-right:5px;
+  
+}
+.view-homepage-bloglist .bshare-custom,.view-homepage-bloglist .read-more a {
+  color: #c12b1c;
+}
+.view-homepage-bloglist .bshare-custom,.view-homepage-bloglist .read-more a:hover {
+  text-decoration: none;
 }
 
 .view-homepage-bloglist .field-name-field-node-blog-facebook-link .field-items a,
@@ -272,8 +293,43 @@ body.page-node.node-type-shop-item h1#page-title {
   color: #900;
 }
 
-body.page-node.node-type-shop-item #block-system-main .node {
+body.page-node.node-type-shop-item #block-system-main .node .left  
+ {
+  width: 540px;
+  float: left;
+  
+  
+
+
 }
+body.page-node.node-type-shop-item #block-system-main .node .right  
+ {
+  width: 340px;
+  float: right;
+ 
+   
+
+
+}
+body.page-node.node-type-shop-item #block-system-main .node .content>a{
+  float: right;
+  background-color: #090909;
+  color: #fff;
+  font-weight: bold;
+ 
+
+ 
+
+}
+body.page-node.node-type-shop-item #block-system-main .node .left .field-items .field-item{
+  float: left;
+  display: block;
+  margin: 50px 20px 60px 10px;
+ 
+}
+
+
+ 
 
 /* Advertisement list */
 
@@ -290,3 +346,47 @@ body.page-node.node-type-shop-item #block-system-main .node {
 body.page-node.node-type-page h1#page-title {
   display: none;
 }
+/* footer */
+.buy {
+  height: 27px;
+  line-height: 0px;
+  padding-left: 385px;
+  margin-bottom: 10px;
+}
+
+.paypal {
+  width: 80px;
+  height: 27px;
+  display: block;
+  float: left;
+  margin-right: 2px;
+  background: url(../../images/paypal.jpg) no-repeat; 
+}
+
+.circle {
+  width: 42px;
+  height: 27px;
+  display: block;
+  float: left;
+  margin-right: 3px;
+  background: url(../../images/circle.jpg) no-repeat; 
+}
+
+.visa {
+  width: 42px;
+  height: 27px;
+  display: block;
+  float: left;
+  background: url(../../images/visa.jpg) no-repeat; 
+}
+/* END footer*/
+
+/* head */
+#header #secondary-menu .links .first {
+  padding-left: 60px;
+  padding-bottom: 2px;
+  background: url(../../images/motuo.jpg) no-repeat;
+}
+/* END head*/
+
+

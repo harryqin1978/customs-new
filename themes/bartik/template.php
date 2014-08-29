@@ -31,6 +31,7 @@ function bartik_preprocess_html(&$variables) {
   drupal_add_css(path_to_theme() . '/css/customs/custom-footer-wrapper.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-views.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/customs/custom-node-shop-item.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/customs/custom-node-video.css', array('group' => CSS_THEME, 'preprocess' => FALSE));
 
   // Load optional css and javascript files
 

@@ -1,0 +1,7 @@
+body.node-type-video #main {
+	width: 100%;
+}
+
+body.node-type-video #page-title {
+	display: none;
+}

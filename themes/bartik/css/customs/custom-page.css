@@ -1,10 +1,10 @@
 body{
-  background:-moz-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc);/*Mozilla*/
-  background:-webkit-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc);/*new gradient for Webkit*/
-  background:-o-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc); /*Opera11*/
-  background:-ms-linear-gradient(left,#ccc,#fff 5%,#fff 95%,#ccc); /*IE*/
+  background:-moz-linear-gradient(left,#F5f5f5,#fff 13%,#fff 86%,#F5f5f5);/*Mozilla*/
+  background:-webkit-linear-gradient(left,#F5f5f5,#fff 13%,#fff 86%,#F5f5f5);/*new gradient for Webkit*/
+  background:-o-linear-gradient(left,#F5f5f5,#fff 13%,#fff 86%,#F5f5f5); /*Opera11*/
+  background:-ms-linear-gradient(left,#F5f5f5,#fff 13%,#fff 86%,#F5f5f5); /*IE*/
 }
 
-#page-wrapper, #page, #main-wrapper, #main-menu-links li a.active, #main-menu-links li.active-trail a, #header, #footer-wrapper {
+#page-wrapper, #page, #main-wrapper, #main-menu-links li a.active, #main-menu-links li.active-trail a, #header, #footer-wrapper, #featured {
   background: transparent;
 }
